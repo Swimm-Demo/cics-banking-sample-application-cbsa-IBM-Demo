@@ -1,0 +1,13 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+  padding-top: 16px;
+}

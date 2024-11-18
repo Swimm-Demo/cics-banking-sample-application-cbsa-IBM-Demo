@@ -1,6 +1,6 @@
 {
   "generator": "docusaurus",
-  "url": "/cics-banking-sample-application-cbsa-IBM-Demo/",
+  "url": "https://swimm-demo.github.io/cics-banking-sample-application-cbsa-IBM-Demo/",
   "docs": {
     "creating-a-new-customer-flow.1a5eyt7l.sw.md": "Docs",
     "handling-abnormal-terminations-abndproc.0sgnj7u6.sw.md": "Docs",

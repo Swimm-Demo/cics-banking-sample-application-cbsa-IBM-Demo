@@ -2,9 +2,9 @@
   "generator": "docusaurus",
   "url": "https://swimm-demo.github.io/cics-banking-sample-application-cbsa-IBM-Demo/",
   "docs": {
+    "overview.v2trixdx.sw.md": "Overview",
     "creating-a-new-customer-flow.1a5eyt7l.sw.md": "Docs",
     "handling-abnormal-terminations-abndproc.0sgnj7u6.sw.md": "Docs",
-    "overview.v2trixdx.sw.md": "Docs",
     "customer-list-feature-overview.eyaiassh.sw.md": "Docs",
     "credit-score-generation-and-update-crdtagy4.15mtclb5.sw.md": "Docs",
     "creating-account-bnk1cac.q5leii0p.sw.md": "Docs",

@@ -34,23 +34,6 @@ classDef aafc79df5 color:#000000,fill:#AA7CB9
 
 # Setups
 
-```mermaid
-graph TD
-  A[PREMIERE Program Start] --> B[Move SORTCODE to REQUIRED-SORT-CODE]
-  B --> C[Move ZERO to ACCOUNT-NUMBER]
-  C --> D[Initialize INQCUST-COMMAREA]
-  D --> E[Move COMM-CUSTNO to INQCUST-CUSTNO]
-  E --> F[Call INQCUST Program]
-
-%% Swimm:
-%% graph TD
-%%   A[PREMIERE Program Start] --> B[Move SORTCODE to REQUIRED-SORT-CODE]
-%%   B --> C[Move ZERO to ACCOUNT-NUMBER]
-%%   C --> D[Initialize INQCUST-COMMAREA]
-%%   D --> E[Move <SwmToken path="src/base/cobol_src/CREACC.cbl" pos="302:3:5" line-data="           MOVE COMM-CUSTNO IN DFHCOMMAREA TO INQCUST-CUSTNO.">`COMM-CUSTNO`</SwmToken> to INQCUST-CUSTNO]
-%%   E --> F[Call INQCUST Program]
-```
-
 <SwmSnippet path="/src/base/cobol_src/CREACC.cbl" line="290">
 
 ---

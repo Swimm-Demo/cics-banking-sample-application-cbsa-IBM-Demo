@@ -1,0 +1,62 @@
+{
+    "rules": {
+      "5c59ab5f-9f2f-4d98-9272-e9b24d35a11d": {
+        "name": "COMM-ACC-TYPE",
+        "rule": {
+          "type": "regex",
+          "regex": "\\bCOMM-ACC-TYPE\\b",
+          "ignoreCase": false
+        },
+        "actions": {
+          "ide": {
+            "message": "COMM-ACC-TYPE: A variable used to store the account type of a customer in the CICS Bank Sample Application (CBSA).\n\nISA, MORTGAGE, SAVING, CURRENT, LOAN - The specific account types 'ISA', 'MORTGAGE', 'SAVING', 'CURRENT', and 'LOAN' are the possible values for COMM-ACC-TYPE. (see src/base/cobol_src/CREACC.cbl:1216: EVALUATE TRUE WHEN COMM-ACC-TYPE IN DFHCOMMAREA(1:3) = 'ISA')\n    \nUsed in the following paths:\n\nsrc/base/cobol_src/UPDACC.cbl\nsrc/base/cobol_src/BNK1DAC.cbl\nsrc/base/cobol_src/BNK1UAC.cbl\nsrc/base/cobol_src/CREACC.cbl\nsrc/base/cobol_src/INQACCCU.cbl\nsrc/base/cobol_src/DELCUS.cbl"
+          }
+        }
+      },
+      "711dc900-5001-4d31-9785-cdc3cab5373f": {
+        "name": "ABND-PROGRAM",
+        "rule": {
+          "type": "regex",
+          "regex": "\\bABND-PROGRAM\\b",
+          "ignoreCase": false
+        },
+        "actions": {
+          "ide": {
+            "message": "ABND-PROGRAM: A variable that holds the name of the program that caused an abend (abnormal end) in a CICS transaction.\n\n\n    \nUsed in the following paths:\n\nsrc/base/cobol_copy/ABNDINFO.cpy\nsrc/base/cobol_src/CRDTAGY4.cbl"
+          }
+        }
+      },
+      "a58ede5f-128a-4c8a-a29b-b6a73f997d33": {
+        "name": "COMM-SCODE",
+        "rule": {
+          "type": "regex",
+          "regex": "\\bCOMM-SCODE\\b",
+          "ignoreCase": false
+        },
+        "actions": {
+          "ide": {
+            "message": "COMM-SCODE: COMM-SCODE is a variable used to store the sort code of a customer or account. It is a 6-character field used in various parts of the application, such as updating account information, validating data, and linking to other functions.\n\n\n    \nUsed in the following paths:\n\nsrc/base/cobol_src/UPDACC.cbl\nsrc/base/cobol_src/BNK1CCA.cbl\nsrc/base/cobol_src/BNK1DAC.cbl\nsrc/base/cobol_src/UPDCUST.cbl\nsrc/base/cobol_src/INQACCCU.cbl\nsrc/base/cobol_src/DELCUS.cbl\nsrc/base/cobol_src/BNK1UAC.cbl\nsrc/base/cobol_src/BNK1DCS.cbl"
+          }
+        }
+      },
+      "4a272b74-e435-46d5-b23b-ee8b6e8991f4": {
+      "name": "COMM-UPD-FAIL-CD",
+      "rule": {
+        "type": "regex",
+        "regex": "\\bCOMM-UPD-FAIL-CD\\b",
+        "ignoreCase": false
+      },
+      "actions": {
+        "ide": {
+          "message": "COMM-UPD-FAIL-CD: A variable used to indicate the reason for a failure in updating customer information in the CICS Bank Sample Application (CBSA).\n\n'1' - The customer number was not found. (see src/base/cobol_src/UPDCUST.cbl, line 237: MOVE '1' TO COMM-UPD-FAIL-CD)\n'2' - An error occurred other than the customer number not being found. (see src/base/cobol_src/UPDCUST.cbl, line 239: MOVE '2' TO COMM-UPD-FAIL-CD)\n'3' - A CICS response other than normal occurred. (see src/base/cobol_src/UPDCUST.cbl, line 308: MOVE '3' TO COMM-UPD-FAIL-CD)\n'4' - The customer name or address is empty or blank. (see src/base/cobol_src/UPDCUST.cbl, line 266: MOVE '4' TO COMM-UPD-FAIL-CD)\n    \nUsed in the following paths:\n\nsrc/base/cobol_src/BNK1DCS.cbl\nsrc/base/cobol_copy/UPDCUST.cpy\nsrc/base/cobol_src/UPDCUST.cbl"
+        }
+      }
+    }
+  },
+  "view_order": [
+      "5c59ab5f-9f2f-4d98-9272-e9b24d35a11d",
+      "711dc900-5001-4d31-9785-cdc3cab5373f",
+      "a58ede5f-128a-4c8a-a29b-b6a73f997d33",
+      "4a272b74-e435-46d5-b23b-ee8b6e8991f4"
+    ]
+  }

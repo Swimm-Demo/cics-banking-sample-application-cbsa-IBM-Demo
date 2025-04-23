@@ -2,6 +2,7 @@
 //* Copyright IBM Corp. 2023       
 //*
 //ZOSCSEC JOB ,,CLASS=A,MSGCLASS=H,
+//* Some comment
 //  NOTIFY=&SYSUID,
 //  MSGLEVEL=(1,1)
 //*
